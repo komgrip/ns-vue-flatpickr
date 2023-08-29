@@ -9,7 +9,7 @@
             <Flatpickr v-model="selectedDate" :options="{ allowInput: true }" />
         </div>
         <div>
-            <h3>Locale</h3>
+            <h3>Buddhist Year</h3>
             <Flatpickr
                 v-model="selectedDate"
                 :options="{ locale: 'th', useBuddhistYear: true }"
