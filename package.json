@@ -1,5 +1,5 @@
 {
-    "name": "@komgrip/ns-vue-flatpickr",
+    "name": "@komgrip/vue-flatpickr",
     "version": "0.2.4",
     "description": "A lightweight and customizable date/time picker component for Vue.js applications",
     "type": "module",
