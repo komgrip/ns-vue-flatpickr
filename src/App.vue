@@ -10,11 +10,18 @@
         </div>
         <div>
             <h3>Locale</h3>
-            <Flatpickr v-model="selectedDate" :options="{ locale: 'th', useLocaleYear: true }" />
+            <Flatpickr
+                v-model="selectedDate"
+                :options="{ locale: 'th', useBuddhistYear: true }"
+            />
         </div>
         <div>
             <h3>Warp</h3>
-            <Flatpickr v-model="selectedDate" wrap :options="{ clickOpens: false }">
+            <Flatpickr
+                v-model="selectedDate"
+                wrap
+                :options="{ clickOpens: false }"
+            >
                 <input type="text" data-input />
                 <button class="input-button" title="toggle" data-toggle>
                     Open
@@ -33,7 +40,7 @@
             <h3>Time</h3>
             <Flatpickr mode="time" v-model="selectedDate" />
         </div>
-        <div style="margin-top: 10px;">
+        <div style="margin-top: 10px">
             {{ selectedDate }}
         </div>
 
@@ -41,14 +48,14 @@
             <h3>Range</h3>
             <Flatpickr mode="range" v-model="selectedRange" />
         </div>
-        <div style="margin-top: 10px;">
+        <div style="margin-top: 10px">
             {{ selectedRange }}
         </div>
         <div>
             <h3>Multiple</h3>
             <Flatpickr mode="multiple" v-model="selectedMultiple" />
         </div>
-        <div style="margin-top: 10px;">
+        <div style="margin-top: 10px">
             {{ selectedMultiple }}
         </div>
     </div>
@@ -57,14 +64,14 @@
 import { Flatpickr } from './index'
 export default {
     components: {
-        Flatpickr
+        Flatpickr,
     },
     data() {
         return {
             selectedDate: new Date(),
             selectedRange: [],
-            selectedMultiple: []
+            selectedMultiple: [],
         }
-    }
+    },
 }
 </script>

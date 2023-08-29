@@ -1,52 +1,50 @@
 {
-  "name": "ns-vue-flatpickr",
-  "version": "0.2.4",
-  "description": "A lightweight and customizable date/time picker component for Vue.js applications",
-  "type": "module",
-  "main": "dist/index.umd.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist",
-    "src"
-  ],
-  "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc && vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "ns-flatpickr": "^4.6.15",
-    "vue": "^3.2.47"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^4.1.0",
-    "path": "^0.12.7",
-    "rollup-plugin-typescript2": "^0.34.1",
-    "typescript": "^5.0.2",
-    "vite": "^4.3.9",
-    "vite-plugin-dts": "^2.3.0",
-    "vue-tsc": "^1.4.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nutthawutkongsopa/ns-vue-flatpickr"
-  },
-  "keywords": [
-    "flatpickr",
-    "datetimepicker",
-    "VueJs",
-    "datepicker",
-    "buddhist year",
-    "calendar",
-    "buddhist calendar",
-    "buddhist",
-    "ปี พ.ศ.",
-    "ปฏิทิน พ.ศ."
-  ],
-  "author": "Nutthawut Kongsopa",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/nutthawutkongsopa/ns-vue-flatpickr/issues"
-  }
+    "name": "@komgrip/ns-vue-flatpickr",
+    "version": "0.2.4",
+    "description": "A lightweight and customizable date/time picker component for Vue.js applications",
+    "type": "module",
+    "main": "dist/index.umd.js",
+    "module": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "scripts": {
+        "dev": "vite",
+        "build": "vue-tsc && vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "@komgrip/flatpickr": "^4.6.17",
+        "vue": "^3.2.47"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^4.1.0",
+        "path": "^0.12.7",
+        "rollup-plugin-typescript2": "^0.34.1",
+        "typescript": "^5.0.2",
+        "vite": "^4.3.9",
+        "vite-plugin-dts": "^2.3.0",
+        "vue-tsc": "^1.4.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/komgrip/ns-vue-flatpickr"
+    },
+    "keywords": [
+        "flatpickr",
+        "datetimepicker",
+        "VueJs",
+        "datepicker",
+        "buddhist year",
+        "calendar",
+        "buddhist calendar",
+        "buddhist"
+    ],
+    "author": "phanuwit.h",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/komgrip/ns-vue-flatpickr/issues"
+    }
 }

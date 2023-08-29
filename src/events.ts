@@ -1,5 +1,5 @@
 // Events to emit, copied from flatpickr source
-import flatpickr from 'ns-flatpickr';
+import flatpickr from '@komgrip/flatpickr'
 
 const includedEvents = [
     'onChange',
@@ -8,7 +8,7 @@ const includedEvents = [
     'onMonthChange',
     'onOpen',
     'onYearChange',
-] as flatpickr.Options.HookKey[];
+] as flatpickr.Options.HookKey[]
 
 // Let's not emit these events by default
 const excludedEvents = [
@@ -18,21 +18,21 @@ const excludedEvents = [
     'onReady',
     'onPreCalendarPosition',
     'onKeyDown',
-] as flatpickr.Options.HookKey[];
+] as flatpickr.Options.HookKey[]
 
 const eventMappings = {
-    'onChange': "change",
-    'onClose': "close",
-    'onDestroy': "destroy",
-    'onMonthChange': "monthChange",
-    'onOpen': "open",
-    'onYearChange': "yearChange",
-    'onValueUpdate': "valueUpdate",
-    'onDayCreate': "dayCreate",
-    'onParseConfig': "parseConfig",
-    'onReady': "ready",
-    'onPreCalendarPosition': "preCalendarPosition",
-    'onKeyDown': "keyDown"
+    onChange: 'change',
+    onClose: 'close',
+    onDestroy: 'destroy',
+    onMonthChange: 'monthChange',
+    onOpen: 'open',
+    onYearChange: 'yearChange',
+    onValueUpdate: 'valueUpdate',
+    onDayCreate: 'dayCreate',
+    onParseConfig: 'parseConfig',
+    onReady: 'ready',
+    onPreCalendarPosition: 'preCalendarPosition',
+    onKeyDown: 'keyDown',
 }
 
 export { includedEvents, excludedEvents, eventMappings }
